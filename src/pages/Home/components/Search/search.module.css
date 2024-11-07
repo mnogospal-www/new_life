@@ -1,0 +1,6 @@
+form {
+	padding: var(--section-gap) 0;
+	width: 100%;
+	display: flex;
+	gap: 1em;
+}

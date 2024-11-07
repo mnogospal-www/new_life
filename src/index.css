@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Font;
+	src: url(/ttf/Mulish.ttf);
+}
+
+:root {
+	--basic-color: #f4f4f4;
+	--font-color: #161616;
+	--secondary-color: #f3edeb;
+	--primary-color: #6800f0;
+
+	--viewpoint: calc(1vh + 1vw);
+	--border-radius: calc(var(--viewpoint) / 1.5);
+	--border: calc(var(--viewpoint) / 15) solid var(--secondary-color);
+	--container-padding: 1.25em;
+	--section-gap: 2.5em;
+
+	&::-webkit-scrollbar {
+		width: 0.5em;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--secondary-color);
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: var(--font-color);
+	}
+}
+
+body {
+	font-size: 1em;
+	font-family: Font;
+	background-color: var(--basic-color);
+	color: var(--font-color);
+}
+
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+@media (max-width: 435px) {
+	html {
+		font-size: 14.5px;
+	}
+}
+
+@media (max-width: 400px) {
+	html {
+		font-size: 13.5px;
+	}
+}
+
+@media (max-width: 370px) {
+	html {
+		font-size: 12.5px;
+	}
+}
+
+@media (max-width: 350px) {
+	html {
+		font-size: 11.5px;
+	}
+}

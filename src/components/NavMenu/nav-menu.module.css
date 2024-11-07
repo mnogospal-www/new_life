@@ -1,0 +1,42 @@
+label,
+input[type='checkbox'] {
+	display: none;
+}
+
+.nav {
+	display: flex;
+	gap: 1em;
+
+	a {
+		color: var(--font-color);
+		text-decoration: none;
+
+		&:hover {
+			color: var(--primary-color);
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.nav {
+		display: none;
+	}
+
+	label {
+		font-size: 2.5em;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	input[type='checkbox']:checked ~ nav {
+		padding: var(--container-padding);
+		position: absolute;
+		right: 0;
+		left: 0;
+		background-color: var(--basic-color);
+		font-size: 1em;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
+	}
+}

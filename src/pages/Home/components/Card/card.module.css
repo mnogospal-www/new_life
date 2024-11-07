@@ -1,0 +1,32 @@
+.card {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+
+	&:hover {
+		img {
+			filter: brightness(95%);
+		}
+	}
+
+	img {
+		width: 100%;
+		border-radius: var(--border-radius);
+	}
+
+	.description {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+		line-clamp: 1;
+	}
+}
+
+@media (max-width: 850px) {
+	.card {
+		min-width: 35vw;
+	}
+}

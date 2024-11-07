@@ -1,0 +1,38 @@
+.banner {
+	height: calc(100vh - 6em);
+	display: flex;
+	flex-direction: column;
+	gap: var(--section-gap);
+
+	.preview {
+		height: 100%;
+		background-size: cover;
+		background-image: url(/home/banner.png);
+		border-radius: var(--border-radius);
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 1em;
+
+		h1 {
+			font-weight: 1000;
+			font-size: 3em;
+		}
+
+		h2 {
+			font-weight: 250;
+			font-size: 1.5em;
+		}
+	}
+}
+
+@media (max-width: 435px) {
+	.banner {
+		button {
+			width: 100%;
+		}
+	}
+}

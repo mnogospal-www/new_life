@@ -1,0 +1,40 @@
+.comment {
+	padding: 1em;
+	border-radius: var(--border-radius);
+	background-color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	gap: 0.25em;
+
+	.preview {
+		width: 3.5em;
+		height: 3.5em;
+		background-size: cover;
+		border-radius: 50%;
+	}
+
+	.description {
+		text-align: start;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: end;
+		gap: 1em;
+
+		.text {
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			line-clamp: 2;
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.comment {
+		min-width: 70%;
+	}
+}
