@@ -1,7 +1,6 @@
 .section {
 	display: flex;
 	flex-direction: column;
-	align-items: start;
 	gap: calc(var(--section-gap) / 2);
 
 	h1 {

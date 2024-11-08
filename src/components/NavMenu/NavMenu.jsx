@@ -8,11 +8,12 @@ export function NavMenu() {
 			<label htmlFor='menu'>≡</label>
 
 			<nav className={styles['nav']}>
+				<Link to='/'>Главная</Link>
 				<Link to=''>Поиск</Link>
 				<Link to=''>Добавить</Link>
 				<Link to=''>Отзывы</Link>
-				<Link to=''>Регистрация</Link>
-				<Link to=''>Личный кабинет</Link>
+				<Link to='register'>Регистрация</Link>
+				<Link to='auth'>Личный кабинет</Link>
 			</nav>
 		</>
 	);

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Section } from '../../components/exporter';
 import { About, Banner, Comments, Search, Slider } from './components/exporter';
+import { Mailing } from './components/Mailing/Mailing';
 
 export function Home() {
 	const lostToday = [
@@ -59,18 +60,22 @@ export function Home() {
 
 	const found = [
 		{
+			id: 0,
 			fileName: 'found.png',
 			title: 'Кошка Соня',
 		},
 		{
+			id: 1,
 			fileName: 'found.png',
 			title: 'Кошка Соня',
 		},
 		{
+			id: 2,
 			fileName: 'found.png',
 			title: 'Кошка Соня',
 		},
 		{
+			id: 3,
 			fileName: 'found.png',
 			title: 'Кошка Соня',
 		},
@@ -101,6 +106,11 @@ export function Home() {
 				<h1>Нашлись недавно</h1>
 				<Slider items={found} />
 				<Link to='#'>Посмотреть всех</Link>
+			</Section>
+
+			<Section>
+				<h1>Подпишись на нашу рассылку!</h1>
+				<Mailing />
 			</Section>
 		</>
 	);
